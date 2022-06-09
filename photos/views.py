@@ -91,7 +91,7 @@ def addPhoto(request):
                 image=image,
             )
 
-        return redirect('gallery')
+        # return redirect('gallery')
 
     context = {'categories': categories}
     return render(request, 'photos/add.html', context)
